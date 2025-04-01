@@ -345,3 +345,88 @@ footer{
 }
 
 /*---------------------------------------------- MEDIA QUERIES -----------------------------------------------------*/
+
+@media (max-width: 1100px) {
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .animes,
+    .mangas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .animes,
+    .mangas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .itemCarrouselTarjeta {
+        flex-direction: column;
+    }
+
+    .conteCarrousel {
+        height: 700px;
+    }
+
+    .infoCarrousel {
+        width: 100%;
+    }
+
+    .itemCarrouselTarjeta img {
+        height: 50%;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .animes,
+    .mangas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .news {
+        grid-template-columns: 1fr;
+    }
+
+    .itemCarrouselTarjeta {
+        align-items: normal;
+    }
+}
+
+@media (max-width: 440px) {
+    .conteCarrousel {
+        height: 900px;
+    }
+
+    .animes,
+    .mangas {
+        grid-template-columns: 1fr;
+    }
+
+    .geners {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+    }
+
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .conteCarrousel {
+        height: 1000px;
+    }
+}
+
