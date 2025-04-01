@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Chakra Petch", sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Belleza", sans-serif;
+}
+
+p{
+    color: rgb(124, 7, 233);
+}
+h2{
+    color: rgb(255, 105, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container{
+    width: 100%;
+}
+/* Estilo para la imagen */
+
+
+.img-1 img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+    height: 400px; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsionarla */
+    align-content: center;
+    border-radius: 10px;
+}
+
+
+/* Sección principal */
+.seccion-1 {
+    background-color: #cfa8e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 10px; /* Espaciado interior */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    padding: 15px;
+}
+
+/* Texto dentro de la sección */
+.tex-1 {
+    width: 100%; /* Hace que el contenido ocupe el 100% del ancho */
+    max-width: 1000px; /* Asegura que no se desborde en pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.tex-1 h1{
+    text-align: center;
+    color: darkmagenta;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration-line: none;
+    gap: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img{
+    width: 300px;    height: 75%; /* Asegura que la caja ocupe toda la altura disponible */
+    overflow: hidden; /* Si la imagen se desborda, la ocultamos */
+}
+
+.sesion-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #dd8cdf;
+    padding: 20px;
+    /* Color de fondo para la sección 3 */
+}
+
+.todocar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;     
+    margin: 0 
+}
+
+.tended {
+    background: #f4bae2;
+    border-radius: 30px;
+    border: 5px solid rgb(246, 113, 233);
+    gap: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(33.333% - 16px); /* 3 cards por fila en desktop */
+}
+.tended img{ 
+    border-radius: 5px; 
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+}
+    
+/* Ajuste para las últimas 2 cards (abajo) en desktop */
+.tended:nth-child(4),
+.tended:nth-child(5) {
+    width: calc(50% - 16px); /* 2 cards abajo */
+}
+
+
+
+.sesion-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f1d0f2;
+    gap: 30px;
+    padding: 20px;
+}
+
+.options-1, .options-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tips img {
+    width: 271px;
+    height: 244px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.basics,
+.jackets,
+.pants,
+.accesories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    background-color: #ec8ced;
+    border-radius: 10px;
+    border: 2px solid black;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+ 
+}
+
+.subtext{
+    font-size: 25px;
+    color: purple;
+}
+
+.sub-text{
+    font-size:  30px;
+    color: purple;
+    text-decoration: #ec8ced;
+    text-shadow: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.web-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    height: 200px;
+    border: 2px solid purple;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+    .tended {
+        width: calc(50% - 16px); /* 2 cards por fila */
+    }
+    .tended:nth-child(4),
+    .tended:nth-child(5) {
+        width: calc(50% - 16px); /* Mantiene 2 cards por fila */
+    }
+}
+
+@media (max-width: 900px) {
+    .sesion-4 {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        padding: 10px; /* Puedes ajustar el padding para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 640px){
+    .tips {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+}
+/* Móvil (hasta 767px) */
+@media (max-width: 500px) {
+    .tended,
+    .tended:nth-child(4),
+    .tended:nth-child(5) {
+        width: 100%; /* 1 card por fila */
+        max-width: none; /* Elimina el límite de ancho */
+    }
+
+    .tex-1 {
+        width: 95%; /* En pantallas más pequeñas, usa un porcentaje mayor */
+    }
+
+    .video {
+        flex-direction: column; /* En pantallas pequeñas, cambia los videos a una columna */
+        gap: 20px;
+    }
+
+    .seccion-1 {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .sesion-4{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #f1d0f2;
+        gap: 20px;
+    }
+
+    
+}

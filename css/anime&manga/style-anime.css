@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Belleza", sans-serif;
+}
+
+/*------------------------------------------- CONTENIDO PRINCIPAL------------------------------------------------- */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #583278;
+}
+
+.title {
+    text-align: center;
+    margin: 1rem;
+    color: white;
+    font-size: 4rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    margin: 0.7rem;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------------------------------------------CARRUSEL DE IMAGENES --------------------------------------------------*/
+
+.carrousel {
+    width: 100%;
+}
+
+.conteCarrousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.itemCarrouselTarjeta {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background-color: #ba319f;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.itemCarrouselTarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.infoCarrousel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    width: 60%;
+}
+
+.infoCarrousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.geners {
+    display: flex;
+    gap: 10px;
+}
+
+.geners div {
+    background-color: #583278;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.carrusel-vermas {
+    padding: 0.7rem 2rem;
+    background-color: #f882df;
+    color: white;
+    border-radius: 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+}
+
+.itemCarrouselArrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 10;
+    /* Asegura que las flechas estén arriba  */
+}
+
+/* .itemCarrouselArrows {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+ 
+} */
+
+.infoCarrousel a {
+    position: relative;
+    z-index: 15;
+    /* Asegura que el botón "Ver más" esté aún más arriba */
+}
+
+.infoCarrousel a button {
+    position: relative;
+    z-index: 15;
+    /* Prioridad sobre otros elementos */
+    cursor: pointer;
+    /* Asegura que el cursor cambie al pasar sobre el botón */
+}
+
+.itemCarrouselArrows>i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1,
+#itemCarrousel-2,
+#itemCarrousel-3,
+#itemCarrousel-4,
+#itemCarrousel-5,
+#itemCarrousel-6,
+#itemCarrousel-7,
+#itemCarrousel-8 {
+    display: flex;
+    justify-content: center;
+}
+
+.conteCarrouselController {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.conteCarrouselController>a {
+    text-decoration: none;
+    font-size: 2.7rem;
+    color: #ba319f;
+}
+
+.itemCarrouselArrows>a>i {
+    color: #ba319f;
+    font-size: 4em;
+}
+
+/*---------------------------------------------- Noticias------------------------------------------------- */
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    background-color: #de6acb;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.news-item img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.news-img h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    background-color: #f882df;
+    border-radius: 40px;
+    padding: 5px;
+    color: #000000;
+}
+
+/* ----------------------------------------------ANIMES y manga -----------------------------------------------------*/
+
+.animes, .mangas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.boton {
+    border: none;
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.boton .cuadro {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.boton:hover .cuadro {
+    transform: rotateY(180deg);
+}
+
+.cara_frontal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.boton .cara_frontal,
+.boton .cara_trasera {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.boton .cara_frontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: #de6acb;
+    /* Color de fondo de la cara frontal */
+}
+
+.boton .cara_trasera {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bb31a0;
+    /* Color de fondo de la cara trasera */
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+.cara_trasera h2 {
+    font-size: 2em;
+}
+
+.type{
+    background-color: #583278;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin:10px 0;
+}
+
+.vermas {
+    padding: 0.7rem 2rem;
+    background-color: #583278;
+    color: white;
+    border-radius: 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+    display: flex;
+
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:  2rem; 
+}
+.vermas-anime_manga {
+    padding: 0.7rem 2rem;
+    background-color: #f882df;
+    color: white;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: none;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #583278;
+    padding: 20px 0;
+    color: white;
+    font-size: 1.2em;
+}
+
+/*---------------------------------------------- MEDIA QUERIES -----------------------------------------------------*/

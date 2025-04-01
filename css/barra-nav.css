@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+#anime-nav{
+    width: 100%;
+}
+.encabezado {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(74, 20, 89);
+    /* Color de fondo oscuro */
+    color: white;
+    /* Color de texto blanco */
+}
+
+/* #logo {
+    background-color: #ba309f;
+    border-radius: 15px;
+} */
+
+#logo h1 {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    /* Tamaño grande para destacar */
+    font-weight: bold;
+    /* Texto más grueso */
+    text-transform: uppercase;
+    /* Convertir texto a mayúsculas */
+    letter-spacing: 80%;
+    /* Espaciado entre letras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra para un efecto elegante */
+    background: linear-gradient(45deg, #f882df, white);
+    /* Degradado en el texto */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Hace que el texto tenga el degradado */
+}
+
+#botonesprincipales {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    background: none;
+    margin-left: 50px;
+    padding-left: 5px;
+}
+
+#botonesprincipales button {
+    
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    /* Borde blanco */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+#botonesprincipales button:hover {
+    background-color: #fff;
+    color: #333;
+    /* Texto oscuro cuando pasa el mouse */
+    border-color: #333;
+    /* Cambia el borde a color oscuro */
+}
+
+#usuario {
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#usuario:hover {
+    background-color: #f0f0f0;
+    /* Cambia el fondo cuando pasa el mouse */
+}
+
+#hamburguesa {
+    display: none;
+    /* Solo visible en pantallas pequeñas */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#icono{
+    color: #583278;;
+}
+
+/* Estilos cuando la pantalla es más pequeña que 600px */
+@media (max-width: 1050px) {
+    #botonesprincipales {
+        
+        display: none;
+        /* Escondemos los botones por defecto */
+        flex-direction: column;
+        gap: 5px;
+        width: 80%;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        background-color: #333;
+        /* Fondo oscuro para el menú */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    #botonesprincipales button {
+        width: 100%;
+    }
+
+    #hamburguesa {
+        display: flex;
+        /* Muestra el botón de hamburguesa en pantallas pequeñas */
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #usuario {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #usuario {
+        display: none;
+    }
+}
+
+/* Cuando la pantalla es mayor a 600px, mostramos los botones de navegación */
+@media (min-width: 1051px) {
+    #botonesprincipales {
+        display: flex;
+        /* Mostramos los botones en pantallas grandes */
+        flex-direction: row;
+        /* Los botones se alinean horizontalmente */
+        gap: 10px;
+    }
+
+    #hamburguesa {
+        display: none;
+        /* Ocultamos el botón de hamburguesa en pantallas grandes */
+    }
+}
+
+/* Mostrar el menú cuando se hace clic en el botón de hamburguesa */
+.menu-activo {
+    display: flex !important;
+}

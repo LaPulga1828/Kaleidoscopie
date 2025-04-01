@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make-Up Kaleidoscope</title>
+  <link rel="stylesheet" href="/css/barra-nav.css">
+  <link rel="stylesheet" href="/css/make-up/make-upCorea.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="fondo">
+    
+      <div class="encabezado">
+        <div id="logo">
+          <h1>KALEIDOSCOPE</h1>
+        </div>
+        <div id="botonesprincipales">
+          <a href="/index.html"><button>Home</button></a>
+          <a href="/html/fashion/fashion.html"><button>Fashion</button></a>
+          <a href="/html/art/art.html"><button>Art</button></a>
+          <a href="/html/anime&manga/anime.html"><button>Anime</button></a>
+          <a href="/html/make-up/make-up.html"><button>Make-up</button></a>
+          <a href="/html/comments/comments.html"><button>Comments</button></a>
+        </div>
+        <div id="usuario">
+          <i id="icono" class="bi bi-person-fill"></i>
+        </div>
+        <button id="hamburguesa" onclick="toggleMenu(event)">☰</button> <!-- Botón de hamburguesa -->
+      </div>
+    
+
+    <div class="fondo">
+      <div class="contenedor">
+        <div class="bloque1">
+          <div class="titulo">
+            <span class="emoji">🌼</span>
+            <h1>Nose rhinestone</h1>
+            <span class="emoji">🌼</span>
+          </div>
+          <img class="imagen" src="/img/make-up/12.jpg">
+
+          <div class="tip">
+            <h2>Step-by-Step Guide</h2>
+            <ol class="tips cinco">
+              <li>Use a white or beige eyeliner to trace the dots where you want to place the rhinestones</li>
+              <li>Then apply eyelash glue and place the stones one by one</li>
+            </ol>
+          </div>
+
+        </div>
+
+        <div class="bloque2">
+          <div class="video">
+            <div class="video-titulo">Watch Tutorial 🤍</div>
+            <video class="video-style" controls>
+              <source src="/videos/make-up/video12.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+  // Función para mostrar u ocultar el menú
+  function toggleMenu(event) {
+      var menu = document.getElementById('botonesprincipales');
+      menu.classList.toggle('menu-activo'); // Alternar la clase para mostrar/ocultar el menú
+      event.stopPropagation(); // Prevenir que el clic en el botón de hamburguesa cierre el menú
+
+      // Detectar clics fuera del menú
+      document.addEventListener('click', function (e) {
+          // Si el clic no es en el menú ni en el botón de hamburguesa, cerramos el menú
+          if (!menu.contains(e.target) && e.target !== document.getElementById('hamburguesa')) {
+              menu.classList.remove('menu-activo');
+          }
+      });
+  }
+</script>

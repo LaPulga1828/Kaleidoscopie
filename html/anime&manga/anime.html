@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Anime Kaleidoscope</title>
+    <link rel="stylesheet" href="/css/barra-nav.css">
+    <link rel="stylesheet" href="/css/anime&manga/style-anime.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/f9c5ea0019.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belleza&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ---------------------------------------------BARRA DE NAVEGACION ------------------------------------------------>
+    <div class="encabezado " id="anime-nav">
+        <div id="logo">
+            <h1>KALEIDOSCOPE</h1>
+        </div>
+        <div id="botonesprincipales">
+            <a href="/index.html"><button>Home</button></a>
+            <a href="/html/fashion/fashion.html"><button>Fashion</button></a>
+            <a href="/html/art/art.html"><button>Art</button></a>
+            <a href="/html/anime&manga/anime.html"><button>Anime</button></a>
+            <a href="/html/make-up/make-up.html"><button>Make-up</button></a>
+            <a href="/html/comments/comments.html"><button>Comments</button></a>
+        </div>
+        <div id="usuario">
+            <i id="icono" class="bi bi-person-fill"></i>
+        </div>
+        <button id="hamburguesa" onclick="toggleMenu(event)">☰</button> <!-- Botón de hamburguesa -->
+    </div>
+
+    <!-- --------------------------------------------------CARRUSEL------------------------------------------------- -->
+    <div class="main">
+        <h1 class="title">Anime/Manga</h1>
+        <div class="carrousel">
+            <div class="conteCarrousel">
+                <div class="itemCarrousel" id="itemCarrousel-1">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/Sousou_no_Frieren-Anime.jpg" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>Sousou no Frieren</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Anime</p>
+                                </div>
+                                <div>
+                                    <p>Adventure</p>
+                                </div>
+                                <div>
+                                    <p>Drama</p>
+                                </div>
+                                <div>
+                                    <p>Fantasy</p>
+                                </div>
+                            </div>
+                            <p>During their decade-long quest to defeat the Demon King, the members of the hero's
+                                party—Himmel himself, the priest Heiter, the dwarf warrior Eisen, and the elven mage
+                                Frieren—forge bonds through adventures and battles, creating unforgettable precious
+                                memories for most of them.</p>
+                            <a href="https://myanimelist.net/anime/52991/Sousou_no_Frieren" target="_blank"><button
+                                    class="carrusel-vermas">Ver
+                                    mas</button></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-8">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-2">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-2">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/Berserk-Manga.jpg" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>Berserk</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Manga</p>
+                                </div>
+                                <div>
+                                    <p>Horror</p>
+                                </div>
+                                <div>
+                                    <p>Drama</p>
+                                </div>
+                                <div>
+                                    <p>Fantasy</p>
+                                </div>
+                            </div>
+                            <p>Guts, a former mercenary now known as the Black Swordsman, is out for revenge. After
+                                a tumultuous childhood, he finally finds someone he respects and believes he can
+                                trust, only to have everything fall apart when this person takes away everything
+                                important to Guts for the purpose of fulfilling his own desires. Now marked for
+                                death, Guts becomes condemned to a fate in which he is relentlessly pursued by
+                                demonic beings.</p>
+                            <a href="https://myanimelist.net/manga/2/Berserk" target="_blank"><button
+                                    class="carrusel-vermas">Ver mas</button></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-1">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-3">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-3">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/Mo_Dao_Zu_Shi_Wanjie_Pian-Ona1.jpg" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>Mo Dao Zu Shi: Wanjie Pian</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Onas</p>
+                                </div>
+                                <div>
+                                    <p>Adventure</p>
+                                </div>
+                                <div>
+                                    <p>Action</p>
+                                </div>
+                                <div>
+                                    <p>Fantasy</p>
+                                </div>
+                            </div>
+                            <p>Along an empty road in the rural countryside, Wei Wuxian and Lan Wangji stumble
+                                across a stone plaque that reads "Yi City." Still on their quest to unravel the
+                                mystery behind the cursed severed arm, they venture into the deserted city to obtain
+                                further leads.</p>
+                            <a href="https://myanimelist.net/anime/40434/Mo_Dao_Zu_Shi__Wanjie_Pian"
+                                target="_blank"><button class="carrusel-vermas">Ver mas</button></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-2">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-4">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-4">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/The World's Best Engineer-manhwa1.jpg" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>The World's Best Engineer</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Manhwa</p>
+                                </div>
+                                <div>
+                                    <p>Adventure</p>
+                                </div>
+                                <div>
+                                    <p>Comedy</p>
+                                </div>
+                                <div>
+                                    <p>Fantasy</p>
+                                </div>
+                            </div>
+                            <p>There is no bigger scum of the earth than Lloyd Frontera. He is the eldest son, yet
+                                all he does is drink and intimidate others, depleting what little is left of his
+                                family's wealth. The Fronteras' knight, Javier Asrahan, is destined to become a
+                                renowned swordmaster, and Lloyd's family will face pitiful deaths as their entire
+                                land falls to ruin under insurmountable debt.</p>
+                            <a href="https://myanimelist.net/manga/147272/The_Greatest_Estate_Developer"
+                                target="_blank"><button class="carrusel-vermas">Ver mas</button></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-3">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-5">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-5">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/Shingeki no Kiojin1.png" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>Shingeki no Kyojin</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Anime</p>
+                                </div>
+                                <div>
+                                    <p>Action</p>
+                                </div>
+                                <div>
+                                    <p>Drama</p>
+                                </div>
+                                <div>
+                                    <p>Suspence</p>
+                                </div>
+                            </div>
+                            <p>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid
+                                creatures called Titans, forcing humans to hide in fear behind enormous concentric
+                                walls. What makes these giants truly terrifying is that their taste for human flesh
+                                is not born out of hunger but what appears to be out of pleasure. To ensure their
+                                survival, the remnants of humanity began living within defensive barriers, resulting
+                                in one hundred years without a single titan encounter.</p>
+                            <a href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank"><button
+                                    class="carrusel-vermas">Ver mas</button></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-4">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-6">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-6">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/One Piece.png" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>One Piece</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Manga</p>
+                                </div>
+                                <div>
+                                    <p>Adventure</p>
+                                </div>
+                                <div>
+                                    <p>Action</p>
+                                </div>
+                                <div>
+                                    <p>Fantasy</p>
+                                </div>
+                            </div>
+                            <p>Gol D. Roger, a man referred to as the King of the Pirates, is set to be executed by
+                                the World Government. But just before his demise, he confirms the existence of a
+                                great treasure, One Piece, located somewhere within the vast ocean known as the
+                                Grand Line. Announcing that One Piece can be claimed by anyone worthy enough to
+                                reach it, the King of the Pirates is executed and the Great Age of Pirates begins.
+                            </p>
+                            <a href="https://myanimelist.net/manga/13/One_Piece" target="_blank"><button
+                                    class="carrusel-vermas">Ver mas</button></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-5">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-7">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-7">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/Tian Guan Cifu Er.png" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>Tian Guan Cifu Er</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Anime</p>
+                                </div>
+                                <div>
+                                    <p>Action</p>
+                                </div>
+                                <div>
+                                    <p>Drama</p>
+                                </div>
+                                <div>
+                                    <p>Fantasy</p>
+                                </div>
+                            </div>
+                            <p>Although most gods in the heavenly realm avoid dealing with the forgotten god Xie
+                                Lian, Heavenly Emperor Jun Wu holds him in good graces. Xie Lian's luck is otherwise
+                                terrible, and adding to his troubles, the gods seem to suspect that Xie Lian's
+                                recent companion was the dreaded Ghost King Hua Cheng. Despite what others may think
+                                of him, Xie Lian fondly recalls Hua Cheng's promise: the next time they meet, Hua
+                                Cheng will appear in his true form.</p>
+                            <a href="https://myanimelist.net/anime/50399/Tian_Guan_Cifu_Er" target="_blank"><button
+                                    class="carrusel-vermas">Ver mas</button></a>
+
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-6">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-8">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-8">
+                    <div class="itemCarrouselTarjeta">
+                        <img src="/img/anime&manga/Solo Leveling1.png" alt="Souso no frieren">
+                        <div class="infoCarrousel">
+                            <h2>Solo Leveling</h2>
+                            <div class="geners">
+                                <div>
+                                    <p>Manhwa</p>
+                                </div>
+                                <div>
+                                    <p>Adventure</p>
+                                </div>
+                                <div>
+                                    <p>Action</p>
+                                </div>
+                                <div>
+                                    <p>Fantasy</p>
+                                </div>
+                            </div>
+                            <p>Ten years ago, "the Gate" appeared and connected the real world with the realm of
+                                magic and monsters. To combat these vile beasts, ordinary people received superhuman
+                                powers and became known as "Hunters." Twenty-year-old Sung Jin-Woo is one such
+                                Hunter, but he is known as the "World's Weakest," owing to his pathetic power
+                                compared to even a measly E-Rank. Still, he hunts monsters tirelessly in low-rank
+                                Gates to pay for his mother's medical bills.</p>
+                            <a href="" target="_blank"><button class="carrusel-vermas">Ver mas</button></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-7">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-1">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="conteCarrouselController">
+                <a href="#itemCarrousel-1">•</a>
+                <a href="#itemCarrousel-2">•</a>
+                <a href="#itemCarrousel-3">•</a>
+                <a href="#itemCarrousel-4">•</a>
+                <a href="#itemCarrousel-5">•</a>
+                <a href="#itemCarrousel-6">•</a>
+                <a href="#itemCarrousel-7">•</a>
+                <a href="#itemCarrousel-8">•</a>
+            </div>
+        </div>
+
+        <!-- -------------------------------------------------------NEWS------------------------------------------------- -->
+        <h1>News</h1>
+        <div class="news">
+            <div class="news-item">
+                <div class="news-img">
+                    <img src="/img/anime&manga/new1.png" alt="Noticia 1">
+                    <h4>31/03/2025</h4>
+                </div>
+                <div class="news-text">
+                    <p>
+                        The 100 Girlfriends Who Really Love You ends without sequel announced.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-img">
+                    <img src="/img/anime&manga/new2.png" alt="Noticia 2">
+                    <h4>01/04/2025</h4>
+                </div>
+                <div class="news-text">
+                    <p>
+                        No, Ghibli hasn't complained about your AI images.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-img">
+                    <img src="/img/anime&manga/new3.png" alt="Noticia 3">
+                    <h4>31/03/2025</h4>
+                </div>
+                <div class="news-text">
+                    <p>
+                        Where to continue reading Solo Leveling?</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-img">
+                    <img src="/img/anime&manga/new4.png" alt="Noticia 4">
+                    <h4>30/03/2025</h4>
+                </div>
+                <div class="news-text">
+                    <p>
+                        Kaguya-sama: Love is War returns, or something like that.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------ANIME ---------------------------------------------------------->
+        <h1>Animes</h1>
+        <div class="animes">
+            <!-- Ia -->
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime1.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Death Note</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Brutal murders, petty thefts, and senseless violence pollute the human world. In contrast, the realm of death gods is a humdrum, unchanging gambling den. </p>
+                        <a href="https://myanimelist.net/anime/1535/Death_Note" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime2.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime3.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime4.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime5.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime6.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime7.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime8.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime9.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime10.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime11.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime12.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime13.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime14.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/anime15.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button"><a href="https://myanimelist.net/anime.php" target="_blank"><button class="vermas-anime_manga">Ver
+                mas</button></a></div>
+        
+        <!-- --------------------------------------------------------MANGA ---------------------------------------------------------->
+        <h1>Mangas</h1>
+        <div class="mangas">
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga1.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga2.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga3.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga4.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga5.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga6.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga7.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga8.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga9.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga10.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga11.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga12.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga13.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga14.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boton">
+                <div class="cuadro">
+                    <div class="cara_frontal">
+                        <img src="/img/anime&manga/manga15.png" alt="Anime1">
+                    </div>
+                    <div class="cara_trasera">
+                        <h2>Solo Leveling</h2>
+                        <div class="type">
+                            <p>Anime</p>
+                        </div>
+                        <p>Descripcion(resumen)</p>
+                        <a href="" target="_blank"><button class="vermas">Ver
+                                mas</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button"><a href="https://myanimelist.net/anime.php" target="_blank"><button class="vermas-anime_manga">Ver
+            mas</button></a></div>
+        
+    </div>
+    <footer></footer>
+</body>
+
+</html>
+<script>
+    // Función para mostrar u ocultar el menú
+    function toggleMenu(event) {
+        var menu = document.getElementById('botonesprincipales');
+        menu.classList.toggle('menu-activo'); // Alternar la clase para mostrar/ocultar el menú
+        event.stopPropagation(); // Prevenir que el clic en el botón de hamburguesa cierre el menú
+
+        // Detectar clics fuera del menú
+        document.addEventListener('click', function (e) {
+            // Si el clic no es en el menú ni en el botón de hamburguesa, cerramos el menú
+            if (!menu.contains(e.target) && e.target !== document.getElementById('hamburguesa')) {
+                menu.classList.remove('menu-activo');
+            }
+        });
+    }
+</script>

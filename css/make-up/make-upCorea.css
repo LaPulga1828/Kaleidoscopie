@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Belleza", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #573278;
+}
+
+
+@keyframes borderAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff99cc, #ff66b2, #f965b4, #ff66b2, #ff99cc);
+    }
+
+    25% {
+        background: linear-gradient(45deg, #ff66b2, #ff1493, #ff99cc, #ff66b2, #f67ebe);
+    }
+
+    50% {
+        background: linear-gradient(45deg, #ff1493, #ff99cc, #ff66b2, #ff1493, #ff66b2);
+    }
+
+    75% {
+        background: linear-gradient(45deg, #ff99cc, #e27eb3, #ff66b2, #ff99cc, #ff66b2);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #ff99cc, #ff66b2, #ff1493, #ff66b2, #ff99cc);
+    }
+}
+
+.fondo {
+    background-color: #bb31a0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr;
+    gap: 80px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.bloque1 {
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.2);
+    animation: borderAnimation 5s infinite linear;
+    margin-bottom: 50px;
+}
+
+
+.imagen {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.bloque2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+
+.tip {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 25px;
+    border: 3px solid #ffb3e6;
+    box-shadow: 0 10px 20px rgba(90, 20, 74, 0.1);
+    margin-top: 20px;
+}
+
+.tip h2 {
+    text-align: center;
+}
+
+.tips {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #5a1a40;
+}
+
+.tips li {
+    padding: 12px;
+    margin: 10px 0;
+    background: #fff0f7;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tips li:before {
+    content: '🌺';
+    margin-right: 10px;
+}
+
+/* ---------------- decoracion Lista ---------------------------*/
+.tips,
+.uno li:before {
+    content: '🌺';
+}
+
+.tips,
+.dos li:before {
+    content: '💋';
+}
+
+.tips,
+.tres li:before {
+    content: '💜';
+}
+
+.tips,
+.cuatro li:before {
+    content: '🌷';
+}
+ 
+.tips,
+.cinco li:before {
+    content: '💎';
+}
+
+.tips,
+.seis li:before {
+    content: '🦋';
+}
+
+.tips,
+.siete li:before {
+    content: '🪷';
+}
+
+/* --------------------------------------------------------- */
+.video {
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    animation: borderAnimation 5s infinite linear;
+}
+
+.video-style {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #ff99cc;
+
+}
+
+.video-titulo {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff66b2;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    z-index: 2;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 40px;
+    }
+    
+    .bloque1 {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    .imagen {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bloque2 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contenedor {
+        padding: 20px 20px;
+    }
+
+    .bloque1 {
+        padding: 10px;
+    }
+
+    .imagen {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tip {
+        padding: 1.5rem;
+    }
+
+    .tips li {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
